@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+:root {
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    -o-object-fit: contain;
+}
