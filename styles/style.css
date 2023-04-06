@@ -4,11 +4,34 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 14px;
+:root {
+    --primary-radius: 0.25rem;
+
+    --netflix-white: rgb(255, 255, 255);
+    --netflix-black: #000;
+    --question-bg: rgba(45, 45, 45, 1);
+    --netflix-red: rgb(229, 9, 20);
+    --netflix-hover-red: rgb(193, 17, 25);
 }
 
-:root {
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    max-width: 100vw;
+    height: 100vh;
+
+    background-color: var(--netflix-black);
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -16,4 +39,321 @@ img {
     height: auto;
     object-fit: contain;
     -o-object-fit: contain;
+}
+
+.login-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url(../images/landing-bg.jpg);
+    background-repeat: no-repeat;
+
+    color: var(--netflix-white);
+}
+
+.login-section-navbar {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50rem;
+    padding: 1.25rem 0;
+}
+
+.logo {
+    width: 9.5rem;
+}
+
+.navbar-right {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.language-change {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--netflix-white);
+    background-color: transparent;
+    padding: 0.4rem 0.8rem;
+    word-spacing: 0.25rem;
+    border: 1px solid gray;
+    border-radius: var(--primary-radius);
+    outline: none;
+}
+
+.language-change:hover {
+    cursor: pointer;
+}
+
+.sign-in {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--netflix-white);
+    background-color: var(--netflix-red);
+    padding: 0.45rem 1rem;
+    border-radius: var(--primary-radius);
+    border: none;
+    outline: none;
+
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.sign-in:hover {
+    background-color: var(--netflix-hover-red);
+    cursor: pointer;
+}
+
+.login-section-body {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 11.25rem 0;
+    gap: 1.5rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.middle-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.bottom-text, .register-top-text {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.input-box > input {
+    height: 100%;
+    width: 24rem;
+    padding: 1.35rem 1rem 1.25rem;
+    background-color: rgba(0, 0, 0, 40%);
+    border: 1px solid gray;
+    border-radius: var(--primary-radius);
+    outline: none;
+    color: var(--netflix-white);
+}
+
+.input-box > input::placeholder {
+    color: lightgray;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input-box > button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    background-color: var(--netflix-red);
+    color: var(--netflix-white);
+    border: none;
+    outline: none;
+    border-radius: var(--primary-radius);
+
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.input-box > button:hover {
+    background-color: var(--netflix-hover-red);
+    cursor: pointer;
+}
+
+.login-screen-gradient {
+    position: absolute;
+    z-index: 1;
+    width: inherit;
+    height: 43.793rem;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+/* Other Sections */
+
+.additional-section {
+    max-width: 100%;
+    height: auto;
+    color: var(--netflix-white);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4.5rem 10.85rem;
+    border-top: 0.5rem solid #222;
+    gap: 0.5rem;
+}
+
+.television, .devices {
+    flex-direction: row;
+}
+
+.mobile, .children {
+    flex-direction: row-reverse;
+}
+
+.text-container {
+    flex: 0.5;
+    color: var(--netflix-white);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.section-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.section-image-container {
+    flex: 0.5;
+    line-height: 0;
+}
+
+.faq-section {
+    max-width: 100%;
+    height: auto;
+    border-top: 0.5rem solid #222;
+    padding: 4.5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--netflix-white);
+}
+
+.faq-header {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.question-container {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.question-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--question-bg);
+
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.question-box:hover {
+    cursor: pointer;
+    background-color: #444;
+}
+
+.question {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.plus-icon {
+    height: fit-content;
+    font-size: 2rem;
+}
+
+.register-box {
+    margin-top: 2.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.page-footer {
+    width: 100%;
+    padding: 3.7rem 11rem 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-top: 0.5rem solid #222;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.intro-text {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.75rem 0;
+}
+
+.phone-number, .link {
+    text-decoration: underline;
+}
+
+.phone-number:hover {
+    cursor: pointer;
+}
+
+.useful-links {
+    display: flex;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 1.5rem 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.row1, .row2, .row3 {
+    width: calc(100% / 3);
+}
+
+.footer-language-change {
+    margin: 0.75rem 0;
+}
+
+.page-title {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0.75rem 0;
 }
