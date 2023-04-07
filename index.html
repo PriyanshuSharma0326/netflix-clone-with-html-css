@@ -6,50 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Netflix 2.0 - Watch TV Shows Online, Watch Movies Online</title>
         <link rel="icon" href="./images/favicon.ico" />
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./styles/style.css">
     </head>
 
     <body>
-        <div class="login-section">
-            <div class="login-section-navbar">
-                <img src="./images/logo.png" alt="" class="logo">
+        <div class='loginScreen'>
+            <div class='loginScreen_background'>
+                <img class='loginScreen_logo' src='https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png' alt='' />
+                
+                <button class="language_change">
+                    <i class="fa-solid fa-globe"></i> <span>English</span> <i class="fa-sharp fa-solid fa-caret-down"></i>
+                </button>
+
+                <button class='loginScreen_button'>
+                    Sign In
+                </button>
+
+                <div class='loginScreen_gradient'></div>
+            </div>
+
+            <div class='loginScreen_body'>
+                <h1>Unlimited films, TV shows and more.</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+
+                <div class='loginScreen_input'>
+                    <form>
+                        <input type='email' placeholder='Email Address' />
                     
-                <div class="navbar-right">
-                    <button class="language-change">
-                        <i class="fa-solid fa-globe"></i> English <i class="fa-sharp fa-solid fa-caret-down"></i>
-                    </button>
-
-                    <button class="sign-in">
-                        Sign In
-                    </button>
+                        <button class='loginScreen_getStarted'>
+                            Get Started >
+                        </button>
+                    </form>
                 </div>
             </div>
-
-            <div class="login-section-body">
-                <h1 class="title">
-                    Unlimited movies, TV shows and more.
-                </h1>
-
-                <h2 class="middle-text">
-                    Watch anywhere. Cancel anytime.
-                </h2>
-    
-                <h3 class="bottom-text">
-                    Ready to watch? Enter your email to create or restart your membership.
-                </h3>
-
-                <div class="input-box">
-                    <input type="email" class="email-input" placeholder="Email address">
-
-                    <button class="get-started">
-                        Get Started >
-                    </button>
-                </div>
-            </div>
-
-            <div class='login-screen-gradient'></div>
         </div>
 
         <div class="additional-section television">
@@ -174,12 +165,14 @@
                     Ready to watch? Enter your email to create or restart your membership.
                 </h3>
 
-                <div class="input-box">
-                    <input type="email" class="email-input" placeholder="Email address">
-
-                    <button class="get-started">
-                        Get Started >
-                    </button>
+                <div class='loginScreen_input faq-input-section'>
+                    <form>
+                        <input type='email' placeholder='Email Address' />
+                    
+                        <button class='loginScreen_getStarted'>
+                            Get Started >
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -190,31 +183,25 @@
             </h4>
 
             <div class="useful-links">
-                <div class="row row1">
-                    <a class="link">FAQ</a>
-                    <a class="link">Media Centre</a>
-                    <a class="link">Ways to Watch</a>
-                    <a class="link">Cookie Preferences</a>
-                    <a class="link">Speed Test</a>
-                </div>
-                <div class="row row2">
-                    <a class="link">Help Centre</a>
-                    <a class="link">Investor Relations</a>
-                    <a class="link">Terms of Use</a>
-                    <a class="link">Corporate Information</a>
-                    <a class="link">Legal Notices</a>
-                </div>
-                <div class="row row3">
-                    <a class="link">Account</a>
-                    <a class="link">Jobs</a>
-                    <a class="link">Privacy</a>
-                    <a class="link">Contact Us</a>
-                    <a class="link">Only on Netflix</a>
-                </div>
+                <a class="link">FAQ</a>
+                <a class="link">Help Centre</a>
+                <a class="link">Account</a>
+                <a class="link">Media Centre</a>
+                <a class="link">Investor Relations</a>
+                <a class="link">Jobs</a>
+                <a class="link">Ways to Watch</a>
+                <a class="link">Terms of Use</a>
+                <a class="link">Privacy</a>
+                <a class="link">Cookie Preferences</a>
+                <a class="link">Corporate Information</a>
+                <a class="link">Contact Us</a>
+                <a class="link">Speed Test</a>
+                <a class="link">Legal Notices</a>
+                <a class="link">Only on Netflix</a>
             </div>
 
-            <button class="language-change footer-language-change">
-                <i class="fa-solid fa-globe"></i> English <i class="fa-sharp fa-solid fa-caret-down"></i>
+            <button class="change_button_footer">
+                <i class="fa-solid fa-globe"></i> <span>English</span> <i class="fa-sharp fa-solid fa-caret-down"></i>
             </button>
 
             <h5 class="page-title">
