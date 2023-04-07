@@ -1,4 +1,4 @@
-# Frontend Mentor - Netflix Clone
+# Netflix Clone - HTML & CSS only
 
 ![Design preview for Netflix Clone](./design/desktop-design.jpg)
 
