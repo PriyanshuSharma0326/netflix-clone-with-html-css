@@ -31,7 +31,7 @@ body {
 
 .loginScreen {
     position: relative;
-    height: 78vh;
+    height: 87.5vh;
     background: url(../images/landing-bg.jpg) center no-repeat;
     background-size: cover;
 }
@@ -48,7 +48,7 @@ body {
 .loginScreen_gradient {
     width: 100%;
     z-index: 1;
-    height: 78vh;
+    height: 87.5vh;
     background-color: rgba(0, 0, 0, 0.4);
     background-image: linear-gradient(
         to top,
@@ -328,11 +328,11 @@ body {
 
 @media screen and (max-width: 376px) {
     .loginScreen {
-        height: 56vh;
+        height: 63.5vh;
     }
 
     .loginScreen_gradient {
-        height: 56vh;
+        height: 63.5vh;
     }
 
     .loginScreen_logo {
@@ -379,7 +379,8 @@ body {
     
     .loginScreen_body > h3 {
         font-size: 1.125rem;
-        font-weight: 400;
+        padding: 0 1.5rem;
+        font-weight: 500;
     }
 
     .loginScreen_input > form {
@@ -401,7 +402,7 @@ body {
     /* Additional Section */
 
     .additional-section {
-        padding: 4rem 0;
+        padding: 2.65rem 0 4rem 0;
         gap: 1.5rem;
     }
     
